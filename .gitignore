@@ -1,6 +1,11 @@
 _site
 _cache
 dist
+site
+dist
+cabal-dev
 *.o
 *.hi
-site
+*.chi
+*.chs.h
+.virthualenv
