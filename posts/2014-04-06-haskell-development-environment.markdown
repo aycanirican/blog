@@ -16,13 +16,13 @@ such an environment from scratch.
 - First, you have to install GHC using homebrew tool (otherwise you
   probably can't compile ghci-ng).
 
-- One thing you should pay attention is that Emacs doesn't set PATH
-  automatically. You may prefere to set them:
+- One more thing you should pay attention is that Emacs doesn't set
+  PATH automatically. You may prefere to set them:
 
-  ``` lisp
-  (let ((home (getenv "HOME"))
-        (my-path (concat "~/.cabal/bin:/usr/local/bin:" (getenv "PATH"))))
-     (setq eshell-path-env my-path)
-     (setq exec-path (append '("~/.cabal/bin" "/usr/local/bin") exec-path))
-     (setenv "PATH" my-path))
-  ```
+```
+(let ((home (getenv "HOME"))
+      (my-path (concat "~/.cabal/bin:/usr/local/bin:" (getenv "PATH"))))
+   (setq eshell-path-env my-path)
+   (setq exec-path (append '("~/.cabal/bin" "/usr/local/bin") exec-path))
+   (setenv "PATH" my-path))
+```
