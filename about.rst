@@ -2,4 +2,4 @@
 title: About
 ---
 
-I'll write more about myself here soon.
+I'm a Haskell programmer from Turkey, hired by Picus Security.
