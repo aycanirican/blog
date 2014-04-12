@@ -19,7 +19,7 @@ such an environment from scratch.
 - One more thing you should pay attention is that Emacs doesn't set
   PATH automatically. You may prefere to set them:
 
-```
+``` commonlisp
 (let ((home (getenv "HOME"))
       (my-path (concat "~/.cabal/bin:/usr/local/bin:" (getenv "PATH"))))
    (setq eshell-path-env my-path)
